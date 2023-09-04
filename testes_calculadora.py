@@ -24,7 +24,7 @@ class TestesCalculadora(unittest.TestCase):
 
     def teste_combinacao(self):
         self.calculadora.somar(10)
-        self.subtrair(5)
+        self.calculadora.subtrair(5)
         self.assertEqual(self.calculadora.resultado, 5)
 
 if __name__ == '__main__':
