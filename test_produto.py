@@ -24,7 +24,9 @@ def teste_vender_produto_sem_estoque():
     with pytest.raises(ValueError):
         produto.vender_produto(15)
     
-def teste_adicionar_estoque_negativo():
+def teste_vender_produto_estoque_negativo():
     produto = Produto('Camiseta Mickey', 50.0)
     with pytest.raises(ValueError):
-        produto.adicionar_estoque(15)
+        produto.vender_produto(15)
+
+pytest.main()
